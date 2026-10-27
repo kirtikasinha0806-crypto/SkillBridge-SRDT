@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile — SkillBridge</title>
+</head>
+<body>
+
+    <header>
+        <p><a href="index.html"><strong>SkillBridge</strong></a></p>
+        <p>Student Skill &amp; Internship Matching System</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Student Profile</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="internship-details.html">Internship Details</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section>
+            <h1>Student Profile Demonstration</h1>
+            <p>Welcome to the SkillBridge Student Profile preview. This page demonstrates the academic credentials, technical skills, coursework, and personal interests a student maintains within the system. Below is an example profile representing sample data, followed by an HTML demonstration form for editing student details.</p>
+        </section>
+
+        <hr>
+
+        <!-- Sample Student Profile Display -->
+        <section>
+            <h2>Sample Student Record</h2>
+
+            <article>
+                <h3>Alex Morgan (Example Student Data)</h3>
+                <p><strong>Field of Study:</strong> B.Tech in Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning)</p>
+
+                <!-- Academic Background -->
+                <section>
+                    <h4>Academic Background</h4>
+                    <ul>
+                        <li><strong>Institution:</strong> State Institute of Technology (Demonstration College)</li>
+                        <li><strong>Current Standing:</strong> 3rd Year (5th Semester)</li>
+                        <li><strong>Cumulative GPA:</strong> 8.5 / 10.0</li>
+                        <li><strong>Expected Graduation:</strong> June 2027</li>
+                    </ul>
+                </section>
+
+                <!-- Career Interests -->
+                <section>
+                    <h4>Primary Career Interests</h4>
+                    <ul>
+                        <li>Frontend Web Development &amp; User Interface Design</li>
+                        <li>Python Software Engineering</li>
+                        <li>Machine Learning &amp; Applied Data Analysis</li>
+                    </ul>
+                </section>
+
+                <!-- Technical and Soft Skills -->
+                <section>
+                    <h4>Skills Inventory</h4>
+                    <h5>Technical Competencies:</h5>
+                    <ul>
+                        <li>HTML5 &amp; Semantic Web Architecture</li>
+                        <li>CSS3 Fundamentals</li>
+                        <li>Python Programming</li>
+                        <li>C++ Basics &amp; Object-Oriented Principles</li>
+                        <li>Relational Database Management (MySQL)</li>
+                        <li>Git Version Control &amp; GitHub Collaboration</li>
+                    </ul>
+
+                    <h5>Soft Skills &amp; Professional Attributes:</h5>
+                    <ul>
+                        <li>Analytical Problem-Solving</li>
+                        <li>Teamwork &amp; Peer Collaboration</li>
+                        <li>Technical Documentation &amp; Presentation</li>
+                        <li>Time Management &amp; Self-Paced Learning</li>
+                    </ul>
+                </section>
+
+                <!-- Example Projects -->
+                <section>
+                    <h4>Academic &amp; Personal Projects</h4>
+                    <ol>
+                        <li>
+                            <strong>Personal Developer Portfolio:</strong> Built an accessible multi-page personal website using pure semantic HTML5 to showcase coursework assignments and academic achievements.
+                        </li>
+                        <li>
+                            <strong>Student Grade Calculator:</strong> Developed a command-line Python application that calculates semester grade point averages and provides academic performance insights.
+                        </li>
+                        <li>
+                            <strong>Campus Event Directory:</strong> Designed an introductory database schema in MySQL to store, categorize, and query collegiate technical symposium schedules.
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Career Goals -->
+                <section>
+                    <h4>Career Goals</h4>
+                    <p>Alex aims to secure a focused summer internship in frontend or software engineering to gain hands-on industrial exposure, understand modern development workflows, and prepare for capstone project execution.</p>
+                </section>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- HTML Form for Profile Demonstration -->
+        <section>
+            <h2>Update Profile (HTML Form Demonstration)</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal &amp; Contact Details</legend>
+
+                    <p>
+                        <label for="student-name">Full Name:</label><br>
+                        <input type="text" id="student-name" name="studentName" value="Alex Morgan" required>
+                    </p>
+
+                    <p>
+                        <label for="student-email">Email Address:</label><br>
+                        <input type="email" id="student-email" name="studentEmail" value="alex.morgan.sample@example.edu" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Academic Information</legend>
+
+                    <p>
+                        <label for="degree-course">Degree / Course:</label><br>
+                        <input type="text" id="degree-course" name="degreeCourse" value="B.Tech Computer Science (AI &amp; ML)" required>
+                    </p>
+
+                    <p>
+                        <label for="study-year">Current Year of Study:</label><br>
+                        <select id="study-year" name="studyYear" required>
+                            <option value="">-- Select Year of Study --</option>
+                            <option value="1">1st Year (Freshman)</option>
+                            <option value="2">2nd Year (Sophomore)</option>
+                            <option value="3" selected>3rd Year (Junior)</option>
+                            <option value="4">4th Year (Senior)</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Skills &amp; Professional Interests</legend>
+
+                    <p>
+                        <label for="profile-skills">Key Technical &amp; Soft Skills (comma-separated):</label><br>
+                        <textarea id="profile-skills" name="profileSkills" rows="3" cols="50">HTML5, CSS3, Python, C++, MySQL, Git, Problem Solving</textarea>
+                    </p>
+
+                    <p>
+                        <label for="profile-interests">Areas of Career Interest:</label><br>
+                        <textarea id="profile-interests" name="profileInterests" rows="3" cols="50">Frontend Web Development, Machine Learning, Data Analytics</textarea>
+                    </p>
+
+                    <p>
+                        <label for="profile-intro">Short Introduction / Bio:</label><br>
+                        <textarea id="profile-intro" name="profileIntro" rows="4" cols="50">Undergraduate computer science student passionate about building clean, accessible web interfaces and learning modern data-driven technologies.</textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <input type="submit" value="Save Profile">
+                    <input type="reset" value="Reset Form">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <section>
+            <h2>About SkillBridge</h2>
+            <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
+        </section>
+
+        <nav aria-label="Footer Navigation">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Student Profile</a></li>
+                <li><a href="internships.html">Internship Listings</a></li>
+                <li><a href="internship-details.html">Featured Internship Details</a></li>
+                <li><a href="apply.html">Demonstration Application</a></li>
+                <li><a href="contact.html">Project Contact</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 SkillBridge — Student Skill & Internship Matching System.</p>
+    </footer>
+
+</body>
+</html>
