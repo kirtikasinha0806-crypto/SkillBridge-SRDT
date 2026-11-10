@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us — SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <p><a href="index.html"><strong>SkillBridge</strong></a></p>
-        <p>Student Skill &amp; Internship Matching System</p>
+        <div class="brand">
+            <p><a href="index.html"><strong>SkillBridge</strong></a></p>
+            <p class="brand-tagline">Student Skill &amp; Internship Matching System</p>
+        </div>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,101 +21,122 @@
                 <li><a href="internships.html">Internships</a></li>
                 <li><a href="internship-details.html">Internship Details</a></li>
                 <li><a href="apply.html">Apply</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <hr>
 
+    <!-- Main Content -->
     <main>
 
-        <!-- Page Introduction & Academic Notice -->
-        <section>
-            <h1>Contact SkillBridge Project Team</h1>
-            <p>Have questions, feedback, or ideas regarding the SkillBridge concept? We welcome inquiries from classmates, mentors, and faculty evaluators.</p>
-        </section>
+        <div class="form-container-narrow">
+            <!-- Intro -->
+            <section>
+                <h1>Contact SkillBridge Project Team</h1>
+                <p>Have questions, feedback, or ideas regarding the SkillBridge concept? We welcome inquiries from classmates, mentors, and faculty evaluators.</p>
+            </section>
 
-        <hr>
+            <hr>
 
-        <!-- Contact Form Section -->
-        <section>
-            <h2>Send a Feedback Message (Form Demonstration)</h2>
-            <p>Use the form below to test input formatting, field labeling, and client-side structure.</p>
+            <!-- Project Info -->
+            <section class="details-content-box">
+                <h2>About the Project</h2>
+                <p>SkillBridge is an educational platform concept developed by a B.Tech Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning) student. The objective is to design a clean, accessible interface that helps students showcase their technical skills and discover relevant internship opportunities.</p>
+                <p><strong>Contact Details:</strong></p>
+                <ul class="styled-list">
+                    <li><strong>Department:</strong> Department of Computer Science &amp; Engineering</li>
+                    <li><strong>Email:</strong> contact@skillbridge.edu</li>
+                    <li><strong>Location:</strong> College Campus</li>
+                </ul>
+            </section>
 
-            <form action="#" method="get">
+            <hr>
 
-                <fieldset>
-                    <legend>Contact Form Inquiry</legend>
+            <!-- Contact Form -->
+            <section>
+                <h2>Send a Message</h2>
+                <p>Fill out the form below to get in touch with our team.</p>
 
-                    <p>
-                        <label for="contact-name">Your Full Name *:</label><br>
-                        <input type="text" id="contact-name" name="contactName" placeholder="e.g., Prof. Sharma / Jane Doe" required>
+                <form action="#" method="get">
+
+                    <fieldset>
+                        <legend>Contact Form Inquiry</legend>
+
+                        <p>
+                            <label for="contact-name">Your Full Name *:</label><br>
+                            <input type="text" id="contact-name" name="contactName" placeholder="e.g., Alex Morgan" required>
+                        </p>
+
+                        <p>
+                            <label for="contact-email">Your Email Address *:</label><br>
+                            <input type="email" id="contact-email" name="contactEmail" placeholder="e.g., alex.morgan@college.edu" required>
+                        </p>
+
+                        <p>
+                            <label for="contact-subject">Subject *:</label><br>
+                            <input type="text" id="contact-subject" name="contactSubject" placeholder="e.g., Question about internship listings" required>
+                        </p>
+
+                        <p>
+                            <label for="contact-message">Your Message *:</label><br>
+                            <textarea id="contact-message" name="contactMessage" rows="5" cols="55" placeholder="Write your message here..." required></textarea>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <p class="form-actions">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                        <input type="reset" value="Reset Fields" class="btn btn-secondary">
                     </p>
 
-                    <p>
-                        <label for="contact-email">Your Email Address *:</label><br>
-                        <input type="email" id="contact-email" name="contactEmail" placeholder="e.g., feedback@example.edu" required>
-                    </p>
+                </form>
+            </section>
 
-                    <p>
-                        <label for="contact-subject">Subject *:</label><br>
-                        <input type="text" id="contact-subject" name="contactSubject" placeholder="e.g., Feedback on Phase 1 HTML Structure" required>
-                    </p>
+            <hr>
 
-                    <p>
-                        <label for="contact-message">Your Message or Feedback *:</label><br>
-                        <textarea id="contact-message" name="contactMessage" rows="5" cols="55" placeholder="Write your comments, suggestions, or review notes here..." required></textarea>
-                    </p>
-                </fieldset>
-
-                <br>
-
-                <p>
-                    <input type="submit" value="Send Message">
-                    <input type="reset" value="Reset Fields">
-                </p>
-
-            </form>
-        </section>
-
-        <hr>
-
-        <!-- Quick Navigation Links -->
-        <section>
-            <h2>Explore Other SkillBridge Pages</h2>
-            <ul>
-                <li><a href="index.html">Return to Homepage</a></li>
-                <li><a href="profile.html">View Student Profile Demonstration</a></li>
-                <li><a href="internships.html">Browse All Internship Opportunities</a></li>
-                <li><a href="internship-details.html">Read Featured Role Details</a></li>
-                <li><a href="apply.html">Open Internship Application Form</a></li>
-            </ul>
-        </section>
+            <!-- Quick Links -->
+            <section class="details-content-box">
+                <h2>Explore Other SkillBridge Pages</h2>
+                <ul class="styled-list">
+                    <li><a href="index.html">Return to Homepage</a></li>
+                    <li><a href="profile.html">View Student Profile</a></li>
+                    <li><a href="internships.html">Browse All Internship Opportunities</a></li>
+                    <li><a href="internship-details.html">Read Featured Role Details</a></li>
+                    <li><a href="apply.html">Open Internship Application Form</a></li>
+                </ul>
+            </section>
+        </div>
 
     </main>
 
     <hr>
 
+    <!-- Footer -->
     <footer>
-        <section>
-            <h2>About SkillBridge</h2>
-            <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
-        </section>
+        <div class="footer-container">
+            <section class="footer-about">
+                <h2>About SkillBridge</h2>
+                <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
+                <p><em>Note: This is a student demonstration project. All internship listings, company names, and application forms represent sample data created for learning purposes.</em></p>
+            </section>
 
-        <nav aria-label="Footer Navigation">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Student Profile</a></li>
-                <li><a href="internships.html">Internship Listings</a></li>
-                <li><a href="internship-details.html">Featured Internship Details</a></li>
-                <li><a href="apply.html">Demonstration Application</a></li>
-                <li><a href="contact.html">Project Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Student Profile</a></li>
+                    <li><a href="internships.html">Internship Listings</a></li>
+                    <li><a href="internship-details.html">Featured Internship Details</a></li>
+                    <li><a href="apply.html">Demonstration Application</a></li>
+                    <li><a href="contact.html">Project Contact</a></li>
+                </ul>
+            </nav>
 
-        <p>&copy; 2026 SkillBridge — Student Skill & Internship Matching System.</p>
+            <p class="footer-copy">&copy; 2026 SkillBridge — Student Skill &amp; Internship Matching System.</p>
+        </div>
     </footer>
 
 </body>

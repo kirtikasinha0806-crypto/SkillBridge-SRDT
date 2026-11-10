@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile — SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <p><a href="index.html"><strong>SkillBridge</strong></a></p>
-        <p>Student Skill &amp; Internship Matching System</p>
+        <div class="brand">
+            <p><a href="index.html"><strong>SkillBridge</strong></a></p>
+            <p class="brand-tagline">Student Skill &amp; Internship Matching System</p>
+        </div>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Student Profile</a></li>
+                <li><a href="profile.html" aria-current="page">Student Profile</a></li>
                 <li><a href="internships.html">Internships</a></li>
                 <li><a href="internship-details.html">Internship Details</a></li>
                 <li><a href="apply.html">Apply</a></li>
@@ -24,29 +28,30 @@
 
     <hr>
 
+    <!-- Main Content -->
     <main>
 
-        <!-- Page Introduction -->
+        <!-- Profile Introduction -->
         <section>
-            <h1>Student Profile Demonstration</h1>
-            <p>Welcome to the SkillBridge Student Profile preview. This page demonstrates the academic credentials, technical skills, coursework, and personal interests a student maintains within the system. Below is an example profile representing sample data, followed by an HTML demonstration form for editing student details.</p>
+            <h1>Student Profile</h1>
+            <p>Welcome to the SkillBridge Student Profile. This page highlights academic credentials, technical skills, coursework, and personal interests to help match with relevant internship opportunities.</p>
         </section>
 
         <hr>
 
-        <!-- Sample Student Profile Display -->
+        <!-- Profile Details -->
         <section>
             <h2>Sample Student Record</h2>
 
-            <article>
-                <h3>Alex Morgan (Example Student Data)</h3>
+            <article class="profile-record-card">
+                <h3>Alex Morgan</h3>
                 <p><strong>Field of Study:</strong> B.Tech in Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning)</p>
 
                 <!-- Academic Background -->
-                <section>
+                <section class="profile-sub-section">
                     <h4>Academic Background</h4>
-                    <ul>
-                        <li><strong>Institution:</strong> State Institute of Technology (Demonstration College)</li>
+                    <ul class="profile-details-list">
+                        <li><strong>Institution:</strong> State Institute of Technology</li>
                         <li><strong>Current Standing:</strong> 3rd Year (5th Semester)</li>
                         <li><strong>Cumulative GPA:</strong> 8.5 / 10.0</li>
                         <li><strong>Expected Graduation:</strong> June 2027</li>
@@ -54,20 +59,20 @@
                 </section>
 
                 <!-- Career Interests -->
-                <section>
+                <section class="profile-sub-section">
                     <h4>Primary Career Interests</h4>
-                    <ul>
+                    <ul class="profile-details-list">
                         <li>Frontend Web Development &amp; User Interface Design</li>
                         <li>Python Software Engineering</li>
                         <li>Machine Learning &amp; Applied Data Analysis</li>
                     </ul>
                 </section>
 
-                <!-- Technical and Soft Skills -->
-                <section>
+                <!-- Skills -->
+                <section class="profile-sub-section">
                     <h4>Skills Inventory</h4>
                     <h5>Technical Competencies:</h5>
-                    <ul>
+                    <ul class="skill-tags">
                         <li>HTML5 &amp; Semantic Web Architecture</li>
                         <li>CSS3 Fundamentals</li>
                         <li>Python Programming</li>
@@ -77,7 +82,7 @@
                     </ul>
 
                     <h5>Soft Skills &amp; Professional Attributes:</h5>
-                    <ul>
+                    <ul class="skill-tags">
                         <li>Analytical Problem-Solving</li>
                         <li>Teamwork &amp; Peer Collaboration</li>
                         <li>Technical Documentation &amp; Presentation</li>
@@ -85,10 +90,10 @@
                     </ul>
                 </section>
 
-                <!-- Example Projects -->
-                <section>
+                <!-- Projects -->
+                <section class="profile-sub-section">
                     <h4>Academic &amp; Personal Projects</h4>
-                    <ol>
+                    <ol class="projects-list">
                         <li>
                             <strong>Personal Developer Portfolio:</strong> Built an accessible multi-page personal website using pure semantic HTML5 to showcase coursework assignments and academic achievements.
                         </li>
@@ -101,8 +106,8 @@
                     </ol>
                 </section>
 
-                <!-- Career Goals -->
-                <section>
+                <!-- Goals -->
+                <section class="profile-sub-section">
                     <h4>Career Goals</h4>
                     <p>Alex aims to secure a focused summer internship in frontend or software engineering to gain hands-on industrial exposure, understand modern development workflows, and prepare for capstone project execution.</p>
                 </section>
@@ -111,9 +116,9 @@
 
         <hr>
 
-        <!-- HTML Form for Profile Demonstration -->
+        <!-- Edit Profile Form -->
         <section>
-            <h2>Update Profile (HTML Form Demonstration)</h2>
+            <h2>Update Profile</h2>
 
             <form action="#" method="get">
 
@@ -176,9 +181,9 @@
 
                 <br>
 
-                <p>
-                    <input type="submit" value="Save Profile">
-                    <input type="reset" value="Reset Form">
+                <p class="form-actions">
+                    <input type="submit" value="Save Profile" class="btn btn-primary">
+                    <input type="reset" value="Reset Form" class="btn btn-secondary">
                 </p>
 
             </form>
@@ -188,25 +193,29 @@
 
     <hr>
 
+    <!-- Footer -->
     <footer>
-        <section>
-            <h2>About SkillBridge</h2>
-            <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
-        </section>
+        <div class="footer-container">
+            <section class="footer-about">
+                <h2>About SkillBridge</h2>
+                <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
+                <p><em>Note: This is a student demonstration project. All internship listings, company names, and application forms represent sample data created for learning purposes.</em></p>
+            </section>
 
-        <nav aria-label="Footer Navigation">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Student Profile</a></li>
-                <li><a href="internships.html">Internship Listings</a></li>
-                <li><a href="internship-details.html">Featured Internship Details</a></li>
-                <li><a href="apply.html">Demonstration Application</a></li>
-                <li><a href="contact.html">Project Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Student Profile</a></li>
+                    <li><a href="internships.html">Internship Listings</a></li>
+                    <li><a href="internship-details.html">Featured Internship Details</a></li>
+                    <li><a href="apply.html">Demonstration Application</a></li>
+                    <li><a href="contact.html">Project Contact</a></li>
+                </ul>
+            </nav>
 
-        <p>&copy; 2026 SkillBridge — Student Skill & Internship Matching System.</p>
+            <p class="footer-copy">&copy; 2026 SkillBridge — Student Skill &amp; Internship Matching System.</p>
+        </div>
     </footer>
 
 </body>

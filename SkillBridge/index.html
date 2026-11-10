@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge — Student Skill &amp; Internship Matching System</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <p><a href="index.html"><strong>SkillBridge</strong></a></p>
-        <p>Student Skill &amp; Internship Matching System</p>
+        <div class="brand">
+            <p><a href="index.html"><strong>SkillBridge</strong></a></p>
+            <p class="brand-tagline">Student Skill &amp; Internship Matching System</p>
+        </div>
         <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="profile.html">Student Profile</a></li>
                 <li><a href="internships.html">Internships</a></li>
                 <li><a href="internship-details.html">Internship Details</a></li>
@@ -24,102 +28,106 @@
 
     <hr>
 
+    <!-- Main Content -->
     <main>
 
-        <section>
-            <p>Your skills. Your next opportunity.</p>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <p class="hero-badge">Your skills. Your next opportunity.</p>
             <h1>Find Internships That Match Your Skills</h1>
-            <p>SkillBridge is an academic project concept designed to bridge the gap between classroom learning and real-world experience. By mapping your current technical strengths, coursework, and personal interests, SkillBridge helps students discover relevant internship roles tailored to their career aspirations.</p>
-            <p>
-                <a href="internships.html">Explore Internships</a> |
-                <a href="profile.html">Create Your Student Profile</a>
+            <p class="hero-desc">SkillBridge connects student skills and coursework with relevant internship opportunities, helping students bridge the gap between classroom learning and practical experience.</p>
+            <p class="hero-actions">
+                <a href="internships.html" class="btn btn-primary">Explore Internships</a>
+                <a href="profile.html" class="btn btn-secondary">Create Your Student Profile</a>
             </p>
         </section>
 
         <hr>
 
-        <!-- How It Works Section -->
+        <!-- How It Works -->
         <section>
             <h2>How It Works</h2>
             <p>Discovering your next learning opportunity is structured in three straightforward steps:</p>
-            <ol>
+            <ol class="steps-grid">
                 <li>
                     <h3>Step 1: Build Your Profile</h3>
                     <p>Document your academic background, technical skills, coursework, and career interests so matching opportunities can be identified.</p>
                 </li>
                 <li>
                     <h3>Step 2: Explore Internships</h3>
-                    <p>Browse curated sample roles spanning web development, software engineering, data analysis, and artificial intelligence.</p>
+                    <p>Browse curated roles spanning web development, software engineering, data analysis, and artificial intelligence.</p>
                 </li>
                 <li>
                     <h3>Step 3: Review Opportunities and Apply</h3>
-                    <p>Examine detailed eligibility criteria, required skills, and learning outcomes before submitting a demonstration application.</p>
+                    <p>Examine detailed eligibility criteria, required skills, and learning outcomes before submitting an application.</p>
                 </li>
             </ol>
         </section>
 
         <hr>
 
-        <!-- Featured Internship Opportunities Section -->
+        <!-- Featured Internships -->
         <section>
             <h2>Featured Internship Opportunities</h2>
 
-            <!-- Opportunity Card 1 -->
-            <article>
-                <h3>Frontend Development Intern</h3>
-                <p><strong>Organization:</strong> WebCraft Solutions (Sample Partner)</p>
-                <p><strong>Description:</strong> Assist in building accessible, semantic web layouts and learning modern responsive user interfaces alongside senior mentors.</p>
-                <p><strong>Relevant Skills:</strong></p>
-                <ul>
-                    <li>HTML5 &amp; Semantic Markup</li>
-                    <li>CSS Fundamentals</li>
-                    <li>Basic JavaScript</li>
-                    <li>Responsive Web Design</li>
-                </ul>
-                <p><a href="internship-details.html">View Detailed Role Information</a></p>
-            </article>
+            <div class="cards-grid">
+                <!-- Opportunity 1 -->
+                <article>
+                    <h3>Frontend Development Intern</h3>
+                    <p><strong>Organization:</strong> WebCraft Solutions</p>
+                    <p><strong>Description:</strong> Assist in building accessible, semantic web layouts and learning modern responsive user interfaces alongside senior mentors.</p>
+                    <p><strong>Relevant Skills:</strong></p>
+                    <ul class="skill-tags">
+                        <li>HTML5 &amp; Semantic Markup</li>
+                        <li>CSS Fundamentals</li>
+                        <li>Basic JavaScript</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                    <p><a href="internship-details.html" class="btn btn-secondary">View Detailed Role Information</a></p>
+                </article>
 
-            <!-- Opportunity Card 2 -->
-            <article>
-                <h3>Python Development Intern</h3>
-                <p><strong>Organization:</strong> DataSphere Labs (Sample Partner)</p>
-                <p><strong>Description:</strong> Develop foundational backend scripts, practice object-oriented programming, and assist in automating data workflows.</p>
-                <p><strong>Relevant Skills:</strong></p>
-                <ul>
-                    <li>Python 3</li>
-                    <li>Object-Oriented Programming (OOP)</li>
-                    <li>Git Version Control</li>
-                    <li>Basic Data Structures</li>
-                </ul>
-                <p><a href="internship-details.html">View Detailed Role Information</a></p>
-            </article>
+                <!-- Opportunity 2 -->
+                <article>
+                    <h3>Python Development Intern</h3>
+                    <p><strong>Organization:</strong> DataSphere Labs</p>
+                    <p><strong>Description:</strong> Develop foundational backend scripts, practice object-oriented programming, and assist in automating data workflows.</p>
+                    <p><strong>Relevant Skills:</strong></p>
+                    <ul class="skill-tags">
+                        <li>Python 3</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Git Version Control</li>
+                        <li>Basic Data Structures</li>
+                    </ul>
+                    <p><a href="internship-details.html" class="btn btn-secondary">View Detailed Role Information</a></p>
+                </article>
 
-            <!-- Opportunity Card 3 -->
-            <article>
-                <h3>Data Analysis Intern</h3>
-                <p><strong>Organization:</strong> InsightMetrics (Sample Partner)</p>
-                <p><strong>Description:</strong> Clean academic datasets, write introductory SQL queries, and present basic statistical insights using spreadsheets and charts.</p>
-                <p><strong>Relevant Skills:</strong></p>
-                <ul>
-                    <li>SQL Querying</li>
-                    <li>Spreadsheets &amp; Microsoft Excel</li>
-                    <li>Python for Data Analysis</li>
-                    <li>Foundational Statistics</li>
-                </ul>
-                <p><a href="internship-details.html">View Detailed Role Information</a></p>
-            </article>
+                <!-- Opportunity 3 -->
+                <article>
+                    <h3>Data Analysis Intern</h3>
+                    <p><strong>Organization:</strong> InsightMetrics</p>
+                    <p><strong>Description:</strong> Clean datasets, write introductory SQL queries, and present basic statistical insights using spreadsheets and charts.</p>
+                    <p><strong>Relevant Skills:</strong></p>
+                    <ul class="skill-tags">
+                        <li>SQL Querying</li>
+                        <li>Spreadsheets &amp; Microsoft Excel</li>
+                        <li>Python for Data Analysis</li>
+                        <li>Foundational Statistics</li>
+                    </ul>
+                    <p><a href="internship-details.html" class="btn btn-secondary">View Detailed Role Information</a></p>
+                </article>
+            </div>
 
-            <p><a href="internships.html">Browse All Available Sample Internships &rarr;</a></p>
+            <p><a href="internships.html" class="btn btn-primary">Browse All Available Internships &rarr;</a></p>
         </section>
 
         <hr>
 
-        <!-- Skills and Career Preparation Section -->
-        <section>
+        <!-- Skills & Preparation -->
+        <section class="skills-prep-box">
             <h2>Skills and Career Preparation</h2>
             <p>Early skill assessment is an essential part of engineering and technology education. Identifying your strengths allows you to focus on targeted coursework, build meaningful portfolio projects, and choose internships that expand your practical knowledge.</p>
             <h3>Core Competencies Every Student Developer Should Cultivate:</h3>
-            <ul>
+            <ul class="competencies-grid">
                 <li><strong>HTML &amp; Semantic Web:</strong> Structuring web pages accurately for accessibility and search engines.</li>
                 <li><strong>CSS &amp; Styling:</strong> Creating visually appealing, responsive user experiences across all screen sizes.</li>
                 <li><strong>Programming Languages (Python, Java, C++):</strong> Mastering computational logic and algorithmic thinking.</li>
@@ -130,13 +138,13 @@
 
         <hr>
 
-        <!-- Call to Action Section -->
-        <section>
+        <!-- Call to Action -->
+        <section class="cta-banner">
             <h2>Ready to Explore Your Career Pathway?</h2>
-            <p>Start by reviewing your academic profile or browsing through our catalog of sample internship opportunities to understand typical industry expectations.</p>
-            <p>
-                <a href="internships.html">Explore Sample Internships</a> |
-                <a href="profile.html">View Student Profile Demonstration</a>
+            <p>Start by reviewing your academic profile or browsing through our catalog of internship opportunities to understand typical industry expectations.</p>
+            <p class="cta-actions">
+                <a href="internships.html" class="btn btn-primary">Explore Internships</a>
+                <a href="profile.html" class="btn btn-secondary">View Student Profile</a>
             </p>
         </section>
 
@@ -144,25 +152,29 @@
 
     <hr>
 
+    <!-- Footer -->
     <footer>
-        <section>
-            <h2>About SkillBridge</h2>
-            <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
-        </section>
+        <div class="footer-container">
+            <section class="footer-about">
+                <h2>About SkillBridge</h2>
+                <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students can identify their technical strengths and discover relevant internship opportunities.</p>
+                <p><em>Note: This is a student demonstration project. All internship listings, company names, and application forms represent sample data created for learning purposes.</em></p>
+            </section>
 
-        <nav aria-label="Footer Navigation">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Student Profile</a></li>
-                <li><a href="internships.html">Internship Listings</a></li>
-                <li><a href="internship-details.html">Featured Internship Details</a></li>
-                <li><a href="apply.html">Demonstration Application</a></li>
-                <li><a href="contact.html">Project Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Student Profile</a></li>
+                    <li><a href="internships.html">Internship Listings</a></li>
+                    <li><a href="internship-details.html">Featured Internship Details</a></li>
+                    <li><a href="apply.html">Demonstration Application</a></li>
+                    <li><a href="contact.html">Project Contact</a></li>
+                </ul>
+            </nav>
 
-        <p>&copy; 2026 SkillBridge — Student Skill & Internship Matching System.</p>
+            <p class="footer-copy">&copy; 2026 SkillBridge — Student Skill &amp; Internship Matching System.</p>
+        </div>
     </footer>
 
 </body>
