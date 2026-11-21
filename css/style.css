@@ -1114,6 +1114,237 @@ footer nav a:hover {
     }
 }
 
+/* Status messages */
+.status-banner {
+    padding: 0.95rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    border-left: 4px solid transparent;
+}
+
+.status-banner-success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.status-banner-error {
+    background-color: #FEF2F2;
+    color: #991B1B;
+    border-color: #EF4444;
+}
+
+.status-banner-info {
+    background-color: var(--color-lavender);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Empty state */
+.empty-state-box {
+    background-color: var(--color-white);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.empty-state-box h3 {
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+}
+
+.empty-state-box p {
+    margin-bottom: 1rem;
+}
+
+/* Profile card header buttons */
+.profile-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.profile-header-actions {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-edit-profile {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.95rem !important;
+    font-weight: 600;
+}
+
+.btn-delete-profile {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.95rem !important;
+    color: #DC2626 !important;
+    background-color: #FEF2F2 !important;
+    border: 1px solid #FECACA !important;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+
+.btn-delete-profile:hover {
+    background-color: #FEE2E2 !important;
+    border-color: #FCA5A5 !important;
+    color: #B91C1C !important;
+}
+
+/* Match score badges */
+.match-score-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    margin-bottom: 0.85rem;
+}
+
+.match-score-pill.badge-success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success);
+    border: 1px solid #C4E9DE;
+}
+
+.match-score-pill.badge-lavender {
+    background-color: var(--color-lavender);
+    color: var(--color-primary);
+    border: 1px solid #DCE3FF;
+}
+
+.match-score-pill.badge-subtle {
+    background-color: #F1F5F9;
+    color: #475569;
+    border: 1px solid #CBD5E1;
+}
+
+/* Filter panel on internships page */
+.filter-panel {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.75rem;
+    box-shadow: var(--shadow-subtle);
+}
+
+.filter-row {
+    display: grid;
+    grid-template-columns: 2fr 1.25fr 1fr auto;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-field label {
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+.filter-status-info {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-top: 0.85rem;
+    padding-top: 0.65rem;
+    border-top: 1px solid #F1F3F5;
+}
+
+/* Match analysis box */
+.match-summary-card {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background-color: var(--color-lavender-light);
+    border: 1px solid #DCE3FF;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.match-score-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border: 1px solid #DCE3FF;
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.75rem;
+    min-width: 130px;
+    box-shadow: var(--shadow-subtle);
+}
+
+.match-percentage {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+}
+
+.match-breakdown {
+    flex: 1;
+}
+
+.match-skills-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin: 1rem 0;
+}
+
+.skill-tag-matched {
+    background-color: var(--color-success-bg) !important;
+    color: var(--color-success) !important;
+    border-color: #C4E9DE !important;
+}
+
+.skill-tag-missing {
+    background-color: #FFF1F2 !important;
+    color: #BE123C !important;
+    border-color: #FECDD3 !important;
+}
+
+@media (max-width: 900px) {
+    .filter-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .match-summary-card {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .match-skills-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
     *,

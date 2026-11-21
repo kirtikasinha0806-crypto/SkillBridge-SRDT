@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile — SkillBridge</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -44,12 +45,20 @@
 
         <!-- Profile Details -->
         <section>
-            <h2>Sample Student Record</h2>
+            <h2>Student Record</h2>
 
             <article class="profile-record-card">
-                <h3>Alex Morgan</h3>
-                <p><strong>Field of Study:</strong> B.Tech in Computer Science and Engineering (Artificial Intelligence
-                    &amp; Machine Learning)</p>
+                <div class="profile-card-header">
+                    <div>
+                        <h3>Alex Morgan</h3>
+                        <p><strong>Field of Study:</strong> B.Tech in Computer Science and Engineering (Artificial Intelligence
+                            &amp; Machine Learning)</p>
+                    </div>
+                    <div class="profile-header-actions">
+                        <a href="#update-profile-section" id="btn-edit-profile" class="btn btn-secondary btn-edit-profile">Edit Profile</a>
+                        <button type="button" id="btn-delete-profile" class="btn btn-secondary btn-delete-profile">Delete Profile</button>
+                    </div>
+                </div>
 
                 <!-- Academic Background -->
                 <section class="profile-sub-section">
@@ -127,7 +136,7 @@
         <hr>
 
         <!-- Edit Profile Form -->
-        <section>
+        <section id="update-profile-section">
             <h2>Update Profile</h2>
 
             <form action="#" method="get">
@@ -198,7 +207,6 @@
 
                 <p class="form-actions">
                     <input type="submit" value="Save Profile" class="btn btn-primary">
-                    <input type="reset" value="Reset Form" class="btn btn-secondary">
                 </p>
 
             </form>
@@ -213,10 +221,8 @@
         <div class="footer-container">
             <section class="footer-about">
                 <h2>About SkillBridge</h2>
-                <p><strong>SkillBridge</strong> is an academic frontend project developed to demonstrate how students
-                    can identify their technical strengths and discover relevant internship opportunities.</p>
-                <p><em>Note: This is a student demonstration project. All internship listings, company names, and
-                        application forms represent sample data created for learning purposes.</em></p>
+                <p><strong>SkillBridge</strong> connects students with internship opportunities to help bridge the gap
+                    between academic learning and practical industry experience.</p>
             </section>
 
             <nav class="footer-links" aria-label="Footer Navigation">
@@ -226,7 +232,7 @@
                     <li><a href="profile.html">Student Profile</a></li>
                     <li><a href="internships.html">Internship Listings</a></li>
                     <li><a href="internship-details.html">Featured Internship Details</a></li>
-                    <li><a href="apply.html">Demonstration Application</a></li>
+                    <li><a href="apply.html">Application Form</a></li>
                     <li><a href="contact.html">Project Contact</a></li>
                 </ul>
             </nav>
